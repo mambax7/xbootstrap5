@@ -1,3 +1,7 @@
+5.00 Beta 1 2021-02-14
+-------------------
+- updated to Bootstrap 5.0 Beta 2 (mamba)
+
 5.00 Beta 1 2021-01-26
 -------------------
 - updated to Bootstrap 5.0 Beta 1 (mamba)
