@@ -28,7 +28,7 @@
                     </div>
                 <{/if}>
 
-                <div class="<{if $viewer_level gt 1}>col-md-6<{else}>col-md-12<{/if}> text-right"><{include file="db:newbb_index_menu.tpl"}></div>
+                <div class="<{if $viewer_level gt 1}>col-md-6<{else}>col-md-12<{/if}> text-end"><{include file="db:newbb_index_menu.tpl"}></div>
 
                 <{if $viewer_level gt 1}>
                     <div class="col-md-12">
@@ -324,7 +324,7 @@
 
         <a title="NewBB" href="http://www.simple-xoops.de" class="btn btn-xs btn-success">NewBB Version <{$version/100}></a>
         <{if $rss_button}>
-            <div class="text-right">
+            <div class="text-end">
                 <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/rss.php?c=<{$viewcat}>" target="_blank" title="RSS FEED">
                     <{$rss_button}>
                 </a>

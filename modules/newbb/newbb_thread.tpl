@@ -24,7 +24,7 @@
                 <{if $infobox.show}>
                     <a data-toggle="collapse" href="#<{$topic_post.post_id}>" title="<{$smarty.const.THEME_INFO}>" class="btn btn-primary btn-sm mb10"><span class="fa fa-info-sign"></span></a>
                     <div id="<{$topic_post.post_id}>" class="collapse">
-                        <ul class="list-unstyled text-left">
+                        <ul class="list-unstyled text-start">
                             <li><{$smarty.const._MD_NEWBB_JOINED}>: <{$topic_post.poster.regdate}></li>
                             <{if $topic_post.poster.from}>
                                 <li><{$smarty.const._MD_NEWBB_FROM}>
@@ -104,7 +104,7 @@
     <{/if}>
 
     <{if $topic_post.post_edit}>
-        <div class="text-right">
+        <div class="text-end">
             <small class="text-muted"><em><{$topic_post.post_edit}></em></small>
         </div>
     <{/if}>
@@ -128,7 +128,7 @@
     <{/if}>
     </div>
 
-    <div class="col-md-6 text-right nompl">
+    <div class="col-md-6 text-end nompl">
     <{if $mode gt 1 && $topic_post.poster.uid gt -1}>
         <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/action.post.php?post_id=<{$topic_post.post_id}>&amp;op=split&amp;mode=1" title="<{$smarty.const._MD_NEWBB_SPLIT_ONE}>">
             <{$smarty.const._MD_NEWBB_SPLIT_ONE}>

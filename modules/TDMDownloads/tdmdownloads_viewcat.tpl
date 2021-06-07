@@ -74,7 +74,7 @@
             <{/if}>
             <div class="clearfix"></div>
             <div class="col-md-12">
-                <p class="text-muted text-right">
+                <p class="text-muted text-end">
                     <small><em><{$lang_thereare}></em></small>
                 </p>
             </div>

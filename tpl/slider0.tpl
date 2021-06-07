@@ -1,9 +1,9 @@
 <{if $xoops_page == "index"}>
-<div id="myCarousel" class="carousel slide slideshow" data-ride="carousel">
+<div id="myCarousel" class="carousel slide slideshow" data-bs-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-        <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-        <li data-slide-to="1" data-target="#myCarousel" class=""></li>
+        <li class="active" data-bs-slide-to="0" data-target="#myCarousel"></li>
+        <li data-bs-slide-to="1" data-target="#myCarousel" class=""></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active"><img class="d-block w-100" alt="XOOPS" src="<{$xoops_imageurl}>images/slider1.jpg">

@@ -73,7 +73,7 @@
 
 </div>
 <{if $pagenav|default:false}>
-    <div class="pub_pagenav text-right">
+    <div class="pub_pagenav text-end">
         <{$pagenav}>
     </div>
 <{/if}>
@@ -84,7 +84,7 @@
             <small><{$item.ratingbar}></small>
         </div>
     <{/if}>
-    <div class="pull-right text-right">
+    <div class="pull-right text-end">
         <{$item.adminlink}>
     </div>
     <div class="clearfix"></div>
@@ -159,7 +159,7 @@
             </div>
         <{/if}>
         <{if $next_item_link}>
-            <div class="text-right">
+            <div class="text-end">
                 <{$next_item_link}>
                 <a href="<{$next_item_url}>">
                     <img style="vertical-align: middle;" src="<{$publisher_images_url}>/links/next.gif" title="<{$smarty.const._MD_PUBLISHER_NEXT_ITEM}>" alt="<{$smarty.const._MD_PUBLISHER_NEXT_ITEM}>">

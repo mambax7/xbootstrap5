@@ -40,7 +40,7 @@
         </div>
         <div class="xoopstube-data">
             <div class="row">
-                <div class="col-md-12 text-right"><{$lang_thereare}></div>
+                <div class="col-md-12 text-end"><{$lang_thereare}></div>
             </div>
         </div>
         <!-- .xoopstube-data -->

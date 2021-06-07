@@ -5,13 +5,13 @@
         var extgallery = $('#ext-ind > li');
         extgallery.each(
             function (index) {
-                $(this).attr('data-slide-to', index);
+                $(this).attr('data-bs-slide-to', index);
             }
         )
     });
 </script>
 
-<div id="extgallery-carousel" class="carousel slide" data-ride="carousel">
+<div id="extgallery-carousel" class="carousel slide" data-bs-ride="carousel">
     <ol id="ext-ind" class="carousel-indicators">
         <{foreach item=photo from=$block.photos}>
             <li data-target="#extgallery-carousel"></li>

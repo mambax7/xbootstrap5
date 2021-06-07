@@ -8,6 +8,6 @@
 
         <li class="user-name"><a href="<{$xoops_url}>/userinfo.php?uid=<{$user.id}>" title="<{$user.name}>"><{$user.name}></a></li>
 
-        <li class="join-date text-right hidden-sm join-date"><{$user.joindate}></li>
+        <li class="join-date text-end hidden-sm join-date"><{$user.joindate}></li>
     </ul>
 <{/foreach}>

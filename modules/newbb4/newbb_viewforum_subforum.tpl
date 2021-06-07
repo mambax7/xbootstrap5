@@ -11,7 +11,7 @@
                 </a>
             </li>
 
-            <li class="col-xs-12 col-md-6 text-right">
+            <li class="col-xs-12 col-md-6 text-end">
                 <strong><{$smarty.const._MD_LASTPOST}>:</strong>
                 <{$sforum.forum_lastpost_time}> <strong><{$smarty.const._MD_BY}></strong> <{$sforum.forum_lastpost_user}>
             </li>
@@ -35,7 +35,7 @@
                     <{/if}>
                 </ul>
 
-                <ul class="list-inline col-md-6 text-right">
+                <ul class="list-inline col-md-6 text-end">
                     <{if $sforum.forum_lastpost_subject}>
                         <li>
                             <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/viewtopic.php?post_id=<{$sforum.forum_lastpost_id}>">

@@ -23,7 +23,7 @@
                         
                     <{xoInboxCount assign='unread_count'}>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="xbootstrap-account-menu"><{$smarty.const.THEME_ACCOUNT}> <span class="caret"></span></a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="xbootstrap-account-menu"><{$smarty.const.THEME_ACCOUNT}> <span class="caret"></span></a>
                         <div class="dropdown-menu" aria-labelledby="xbootstrap-account-menu">
                             <{if $xoops_isuser|default:false}>
                             <a class="dropdown-item" href="<{$xoops_url}>/user.php"><{$smarty.const.THEME_ACCOUNT_EDIT}></a>
@@ -54,7 +54,7 @@
                                 <li><a class="dropdown-item" href="#">Topic 1</a></li>
                                 <li><a class="dropdown-item" href="#">Topic 2</a></li>
                                 <li><a class="dropdown-item" href="#">Topic 3</a></li>
-                                <li class="dropdown-submenu dropdown-item"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Topic 4</a>
+                                <li class="dropdown-submenu dropdown-item"><a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Topic 4</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Sub-Topic A</a></li>
                                         <li><a class="dropdown-item" href="#">Sub-Topic B</a></li>

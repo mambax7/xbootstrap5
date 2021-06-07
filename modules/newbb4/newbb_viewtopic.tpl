@@ -70,7 +70,7 @@
                     <{/if}>
             </div>
         <{/if}>
-        <div class="<{if $viewer_level gt 1}>col-sm-4 col-md-4<{else}>col-sm-12 col-md-12<{/if}> generic-pagination text-right">
+        <div class="<{if $viewer_level gt 1}>col-sm-4 col-md-4<{else}>col-sm-12 col-md-12<{/if}> generic-pagination text-end">
             <{$forum_page_nav|replace:'form':'div'|replace:'id="xo-pagenav"':''}>
         </div>
     </div>
@@ -103,7 +103,7 @@
 
         </div>
 
-        <div class="col-sm-6 col-md-6 text-right hidden-xs">
+        <div class="col-sm-6 col-md-6 text-end hidden-xs">
             <a id="threadtop"></a>
             <a class="btn btn-info" href="<{$xoops_url}>/modules/<{$xoops_dirname}>/viewtopic.php?order=<{$order_current}>&topic_id=<{$topic_id}>&forum=<{$forum_id}>&move=prev" title="<{$smarty.const._MD_PREVTOPIC}>">
                 <span class="fa fa-circle-arrow-left"></span>
@@ -214,7 +214,7 @@
                 <{$forum_jumpbox}>
             </div>
 
-            <div class="col-sm-2 col-md-2 text-right nompl hidden-xs">
+            <div class="col-sm-2 col-md-2 text-end nompl hidden-xs">
                 <a id="threadbottom"></a>
                 <a class="btn btn-info" href="<{$xoops_url}>/modules/<{$xoops_dirname}>/viewtopic.php?order=<{$order_current}>&topic_id=<{$topic_id}>&forum=<{$forum_id}>&move=prev" title="<{$smarty.const._MD_PREVTOPIC}>">
                     <span class="fa fa-circle-arrow-left"></span>
@@ -227,7 +227,7 @@
                 </a>
             </div>
         </div>
-        <div class="text-right generic-pagination"><{$forum_page_nav|replace:'form':'div'|replace:'id="xo-pagenav"':''}></div>
+        <div class="text-end generic-pagination"><{$forum_page_nav|replace:'form':'div'|replace:'id="xo-pagenav"':''}></div>
         <{if $quickreply.show}>
             <div class="col-md-12 collapse newbb-quick-reply" id="quickReply"><{$quickreply.form}></div>
         <{/if}>

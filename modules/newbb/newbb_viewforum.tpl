@@ -119,7 +119,7 @@
             &nbsp;
         <{/if}>
     </div>
-    <div class="generic-pagination col-sm-12 text-right">
+    <div class="generic-pagination col-sm-12 text-end">
         <{$forum_pagenav|replace:'form':'div'|replace:'id="xo-pagenav"':''}>
     </div>
 
@@ -198,7 +198,7 @@
     <{/if}>
 </div><!-- .newbb-topicslist -->
 
-<div class="text-right generic-pagination"><{$forum_pagenav|replace:'form':'div'|replace:'id="xo-pagenav"':''}></div>
+<div class="text-end generic-pagination"><{$forum_pagenav|replace:'form':'div'|replace:'id="xo-pagenav"':''}></div>
 
 <div class="row mb10">
     <div class="col-md-12">
@@ -218,7 +218,7 @@
     </div>
 
     <div class="col-sm-2 col-md-2"><a data-toggle="collapse" href="#forum-info" class="btn btn-info" title=""><span class="fa fa-info-sign"></span></a></div>
-    <div class="col-sm-10 col-md-10 text-right xoopsform"><{$forum_jumpbox}></div>
+    <div class="col-sm-10 col-md-10 text-end xoopsform"><{$forum_jumpbox}></div>
 <!--<{$forum_addpoll}>-->
 </div>
 

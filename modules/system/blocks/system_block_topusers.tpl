@@ -15,6 +15,6 @@
 
         <li class="user-name"><a href="<{$xoops_url}>/userinfo.php?uid=<{$user.id}>" title="<{$user.name}>"><{$user.name}></a></li>
 
-        <li class="join-date text-right"><{$user.posts}></li>
+        <li class="join-date text-end"><{$user.posts}></li>
     </ul>
 <{/foreach}>
