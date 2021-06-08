@@ -55,7 +55,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="visually-hidden">Close</span></button>
                 <h4 class="modal-title"><{$sforum.forum_name}></h4>
               </div>
               <div class="modal-body">
