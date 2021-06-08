@@ -31,7 +31,7 @@
                 </div>
             </div>
         <{/foreach}>
-        <a class="left carousel-control" href="#extgallery-carousel" data-slide="prev"><span class="icon-prev"></span></a>
-        <a data-slide="next" href="#extgallery-carousel" class="right carousel-control"><span class="icon-next"></span></a>
+        <a class="left carousel-control" href="#extgallery-carousel" data-bs-slide="prev"><span class="icon-prev"></span></a>
+        <a data-bs-slide="next" href="#extgallery-carousel" class="right carousel-control"><span class="icon-next"></span></a>
     </div>
 </div>
