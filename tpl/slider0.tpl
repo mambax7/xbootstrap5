@@ -2,8 +2,8 @@
 <div id="myCarousel" class="carousel slide slideshow" data-bs-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-        <li class="active" data-bs-slide-to="0" data-target="#myCarousel"></li>
-        <li data-bs-slide-to="1" data-target="#myCarousel" class=""></li>
+        <li class="active" data-bs-slide-to="0" data-bs-target="#myCarousel"></li>
+        <li data-bs-slide-to="1" data-bs-target="#myCarousel" class=""></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active"><img class="d-block w-100" alt="XOOPS" src="<{$xoops_imageurl}>images/slider1.jpg">
@@ -29,11 +29,11 @@
             </div>
         </div>
     </div>
-    <a class="carousel-control-prev carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <a class="carousel-control-prev carousel-control" href="#myCarousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next carousel-control" href="#myCarousel" role="button" data-slide="next" >
+    <a class="carousel-control-next carousel-control" href="#myCarousel" role="button" data-bs-slide="next" >
         <span class="carousel-control-next-icon"></span>
         <span class="sr-only">Next</span>
     </a>
