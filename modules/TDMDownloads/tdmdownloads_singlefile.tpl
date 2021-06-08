@@ -69,7 +69,7 @@
                 <{else}>
                     <li>
                         <div class="alert alert-danger alert-dismissable">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            <button type="button" class="close" data-bs-dismiss="alert" aria-hidden="true">×</button>
                             <{$smarty.const._MD_TDMDOWNLOADS_SINGLEFILE_NOPERM}>
                         </div>
                     </li>

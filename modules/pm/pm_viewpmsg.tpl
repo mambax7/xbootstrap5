@@ -29,17 +29,17 @@
 <div class="message-current-tab">
     <{if $op == "out"}>
         <div class="alert alert-success alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <button type="button" class="close" data-bs-dismiss="alert" aria-hidden="true">×</button>
             <strong><{$smarty.const._PM_OUTBOX}></strong>
         </div>
     <{elseif $op == "save"}>
         <div class="alert alert-success alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <button type="button" class="close" data-bs-dismiss="alert" aria-hidden="true">×</button>
             <strong><{$smarty.const._PM_SAVEBOX}></strong>
         </div>
     <{else}>
         <div class="alert alert-success alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <button type="button" class="close" data-bs-dismiss="alert" aria-hidden="true">×</button>
             <strong><{$smarty.const._PM_INBOX}></strong>
         </div>
     <{/if}>
@@ -47,14 +47,14 @@
 
 <{if $msg}>
     <div class="alert alert-info alert-dismissable">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <button type="button" class="close" data-bs-dismiss="alert" aria-hidden="true">×</button>
         <strong><{$msg}></strong>
     </div>
 <{/if}>
 
 <{if $errormsg}>
     <div class="alert alert-danger alert-dismissable">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <button type="button" class="close" data-bs-dismiss="alert" aria-hidden="true">×</button>
         <strong><{$errormsg}></strong>
     </div>
 <{/if}>

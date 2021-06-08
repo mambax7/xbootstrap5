@@ -2,17 +2,17 @@
 <div class="message-current-tab">
     <{if $op==out}>
         <div class="alert alert-success alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <button type="button" class="close" data-bs-dismiss="alert" aria-hidden="true">×</button>
             <strong><a href="viewpmsg.php?op=out" title="<{$smarty.const._PM_OUTBOX}>"><{$smarty.const._PM_OUTBOX}></a></strong>
         </div>
     <{elseif $op == "save"}>
         <div class="alert alert-success alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <button type="button" class="close" data-bs-dismiss="alert" aria-hidden="true">×</button>
             <strong><a href="viewpmsg.php?op=save" title="<{$smarty.const._PM_SAVEBOX}>"><{$smarty.const._PM_SAVEBOX}></a></strong>
         </div>
     <{else}>
         <div class="alert alert-success alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <button type="button" class="close" data-bs-dismiss="alert" aria-hidden="true">×</button>
             <a href="viewpmsg.php?op=in" title="<{$smarty.const._PM_INBOX}>"><{$smarty.const._PM_INBOX}></a>
         </div>
     <{/if}>

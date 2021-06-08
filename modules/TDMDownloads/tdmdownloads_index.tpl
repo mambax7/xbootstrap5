@@ -32,7 +32,7 @@
                                 <a title="<{$category.title}>" href="<{$xoops_url}>/modules/tdmdownloads/viewcat.php?cid=<{$category.id}>" class="pull-left btn btn-primary">
                                     There are <strong><{$category.totaldownloads}></strong> files in this category!
                                 </a>
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">×</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">×</button>
                             </div>
                         </div>
                     </div>
