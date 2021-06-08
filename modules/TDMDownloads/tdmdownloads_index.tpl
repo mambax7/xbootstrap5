@@ -4,7 +4,7 @@
     <div class="tdm-category row">
         <{foreach item=category from=$categories}>
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 tdm-category-list">
-                <a class="btn btn-primary btn-md btn-block" title="<{$category.title}>" href="<{$xoops_url}>/modules/tdmdownloads/viewcat.php?cid=<{$category.id}>">
+                <a class="btn btn-primary btn-md w-100" title="<{$category.title}>" href="<{$xoops_url}>/modules/tdmdownloads/viewcat.php?cid=<{$category.id}>">
                     <{$category.title}>
                 </a>
 

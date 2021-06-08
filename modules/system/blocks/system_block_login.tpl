@@ -21,10 +21,10 @@
 
         <input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>">
         <input type="hidden" name="op" value="login">
-        <input type="submit" class="btn btn-primary btn-block btn-sm" value="<{$block.lang_login}>">
+        <input type="submit" class="btn btn-primary w-100 btn-sm" value="<{$block.lang_login}>">
         <{$block.sslloginlink}>
     </form>
-    <a class="btn btn-info btn-xs btn-block" href="<{xoAppUrl user.php#lost}>" title="<{$block.lang_lostpass}>"><{$block.lang_lostpass}></a>
+    <a class="btn btn-info btn-xs w-100" href="<{xoAppUrl user.php#lost}>" title="<{$block.lang_lostpass}>"><{$block.lang_lostpass}></a>
 
-    <a class="btn btn-info btn-xs btn-block" href="<{xoAppUrl register.php}>" title="<{$block.lang_registernow}>"><{$block.lang_registernow}></a>
+    <a class="btn btn-info btn-xs w-100" href="<{xoAppUrl register.php}>" title="<{$block.lang_registernow}>"><{$block.lang_registernow}></a>
 </div>

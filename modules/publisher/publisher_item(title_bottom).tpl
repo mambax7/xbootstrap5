@@ -129,7 +129,7 @@
 <!-- Items by same Author -->
 <{if $perm_author_items && $item.uid != 0}>
     <div class="pub_article_extras">
-        <div class="btn btn-primary btn-lg btn-block">
+        <div class="btn btn-primary btn-lg w-100">
             <a href="<{$publisher_url}>/author_items.php?uid=<{$item.uid}>">
                 <{$smarty.const._MD_PUBLISHER_ITEMS_SAME_AUTHOR}>
             </a>

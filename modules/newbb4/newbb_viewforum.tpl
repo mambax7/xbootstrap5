@@ -62,7 +62,7 @@
             </form>
         </div>
         <div class="col-sm-3 col-md-3">
-            <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/search.php" class="btn btn-primary btn-block" title="<{$smarty.const._MD_ADVSEARCH}>"><{$smarty.const.THEME_FORUM_ADVSEARCH}></a>
+            <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/search.php" class="btn btn-primary w-100" title="<{$smarty.const._MD_ADVSEARCH}>"><{$smarty.const.THEME_FORUM_ADVSEARCH}></a>
         </div>
     </div>
 

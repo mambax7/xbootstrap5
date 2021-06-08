@@ -260,7 +260,7 @@
             </form>
         </div>
         <div class="col-md-4">
-            <a class="btn btn-primary btn-block" href="<{$xoops_url}>/modules/<{$xoops_dirname}>/search.php"><{$smarty.const.THEME_FORUM_ADVSEARCH}></a>
+            <a class="btn btn-primary w-100" href="<{$xoops_url}>/modules/<{$xoops_dirname}>/search.php"><{$smarty.const.THEME_FORUM_ADVSEARCH}></a>
         </div>
     </div>
 
