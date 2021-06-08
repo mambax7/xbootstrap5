@@ -7,7 +7,7 @@
             <div class="container">
 
                 <div class="navbar-header">
-                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggler" type="button">
+                    <button data-bs-target=".navbar-collapse" data-bs-toggle="collapse" class="navbar-toggler" type="button">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <a href="<{$xoops_url}>" class="navbar-brand xlogo" title="<{$xoops_sitename}>">
@@ -76,7 +76,7 @@
 
 
                     <{if $xoops_search|default:false}>
-                        <form class="form-inline ml-auto" role="search" action="<{xoAppUrl search.php}>" method="get">
+                        <form class="form-inline ms-auto" role="search" action="<{xoAppUrl search.php}>" method="get">
                             <div class="form-group">
                                 <input type="text" name="query" class="form-control" placeholder="<{$smarty.const.THEME_SEARCH_TEXT}>">
                                 <input type="hidden" name="action" value="results">
