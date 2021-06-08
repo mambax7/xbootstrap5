@@ -72,7 +72,7 @@
             <div class="panel-heading">
                 <h4 class="panel-title newbb-forum-title">
                     <{if $category.forums}>
-                        <a data-bs-toggle="collapse" data-parent="#accordion" href="#<{$category.cat_element_id}>"
+                        <a data-bs-toggle="collapse" data-bs-parent="#accordion" href="#<{$category.cat_element_id}>"
                            title="<{$smarty.const.THEME_NEWBB_TOPIC}>">
                             <span class="fa fa-plus-sign"></span>
                         </a>
