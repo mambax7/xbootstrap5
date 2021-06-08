@@ -7,7 +7,7 @@
                 <strong class="pull-right hit-counter"><{$story.hits}> <{$lang_reads}></strong>
 
                 <h2 class="news-title" role="heading"><{$story.topic_title}> <{$story.news_title}></h2>
-                <a title="<{$story.news_title|strip_tags}>" data-toggle="modal" data-target="#myModal" href="#myModal">
+                <a title="<{$story.news_title|strip_tags}>" data-bs-toggle="modal" data-target="#myModal" href="#myModal">
                     <img src="<{$story.picture}>" alt="<{$story.news_title|strip_tags}>">
                 </a>
             </div>

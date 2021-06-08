@@ -83,7 +83,7 @@
     </div><!-- .tdm-download-data -->
 
     <div class="text-center">
-        <a class="big-info-icon-link" title="Info" data-toggle="collapse" href="#tdm-description"><span class="fa fa-info-sign"></span></a>
+        <a class="big-info-icon-link" title="Info" data-bs-toggle="collapse" href="#tdm-description"><span class="fa fa-info-sign"></span></a>
     </div>
     <div class="collapse" id="tdm-description">
         <{$description}>

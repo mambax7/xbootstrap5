@@ -46,7 +46,7 @@
 
     <{if $commentform}>
         <div class="aligncenter">
-            <button class="btn-comment btn btn-primary btn-md" data-toggle="modal" data-target="#comments-form">
+            <button class="btn-comment btn btn-primary btn-md" data-bs-toggle="modal" data-target="#comments-form">
                 <span class="fa fa-comment"></span> Add Comment
             </button>
         </div>

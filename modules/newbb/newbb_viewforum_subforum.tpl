@@ -1,4 +1,4 @@
-<a title="<{$smarty.const._MD_NEWBB_SUBFORUMS}>" data-toggle="collapse" href="#xoops-subforum" class="btn btn-primary pull-right">
+<a title="<{$smarty.const._MD_NEWBB_SUBFORUMS}>" data-bs-toggle="collapse" href="#xoops-subforum" class="btn btn-primary pull-right">
     <span class="fa fa-plus-sign"></span> <{$smarty.const._MD_NEWBB_SUBFORUMS}>
 </a>
 <div class="newbb-subforum mb10 clearfix">
@@ -27,7 +27,7 @@
             <!-- If subforum description -->
             <{if $sforum.forum_desc != ""}>
                 <li>
-                    <button class="btn btn-xs btn-info" data-toggle="modal" data-target="#subforum-<{$sforum.forum_id}>">
+                    <button class="btn btn-xs btn-info" data-bs-toggle="modal" data-target="#subforum-<{$sforum.forum_id}>">
                         <span class="fa fa-info-sign"></span>
                     </button>
                 </li>

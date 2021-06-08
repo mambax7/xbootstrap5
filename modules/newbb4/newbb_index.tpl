@@ -72,7 +72,7 @@
             <div class="panel-heading">
                 <h4 class="panel-title newbb-forum-title">
                     <{if $category.forums}>
-                        <a data-toggle="collapse" data-parent="#accordion" href="#<{$category.cat_element_id}>"
+                        <a data-bs-toggle="collapse" data-parent="#accordion" href="#<{$category.cat_element_id}>"
                            title="<{$smarty.const.THEME_NEWBB_TOPIC}>">
                             <span class="fa fa-plus-sign"></span>
                         </a>
@@ -93,7 +93,7 @@
                     <{/if}>
 
                     <{if $category.cat_description}>
-                        <a href="#forum-desc-<{$category.cat_element_id}>" title="<{$smarty.const.THEME_FORUM_DESCRIPTION}>" data-toggle="modal"
+                        <a href="#forum-desc-<{$category.cat_element_id}>" title="<{$smarty.const.THEME_FORUM_DESCRIPTION}>" data-bs-toggle="modal"
                            data-target="#forum-desc-<{$category.cat_element_id}>" class="btn btn-xs btn-info pull-right">
                             <span class="fa fa-info-sign"></span>
                         </a>
@@ -162,7 +162,7 @@
                             <{/if}>
                             <!-- Forum description -->
                             <{if $forum.forum_desc != ""}>
-                                <button class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#forumDesc-<{$forum.forum_id}>"><span
+                                <button class="btn btn-primary btn-xs pull-right" data-bs-toggle="modal" data-target="#forumDesc-<{$forum.forum_id}>"><span
                                             class="fa fa-info-sign"></span></button>
                                 <div class="modal fade" id="forumDesc-<{$forum.forum_id}>" tabindex="-1" role="dialog" aria-labelledby="ForumDescription"
                                      aria-hidden="true">

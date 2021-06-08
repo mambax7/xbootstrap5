@@ -105,7 +105,7 @@
     <!-- Start Photo Information -->
     <{if $enable_info }>
         <div class="text-center">
-            <a href="#gallery-info" data-toggle="collapse" class="big-info-icon-link" title="Info"><span class="fa fa-info-sign"></span></a>
+            <a href="#gallery-info" data-bs-toggle="collapse" class="big-info-icon-link" title="Info"><span class="fa fa-info-sign"></span></a>
         </div>
         <div class="panel-collapse collapse" id="gallery-info">
 

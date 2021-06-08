@@ -15,9 +15,9 @@
                 <!-- Category Description -->
                 <div class="aligncenter">
                     <{if $category.description_main != ""}>
-                        <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#tdmDesc-<{$category.id}>">+</button>
+                        <button class="btn btn-primary btn-xs" data-bs-toggle="modal" data-target="#tdmDesc-<{$category.id}>">+</button>
                     <{else}>
-                        <button class="btn btn-xs disabled btn-default" data-toggle="modal">+</button>
+                        <button class="btn btn-xs disabled btn-default" data-bs-toggle="modal">+</button>
                     <{/if}>
                 </div>
 

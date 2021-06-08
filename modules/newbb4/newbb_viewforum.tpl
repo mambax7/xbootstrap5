@@ -37,7 +37,7 @@
                 </a>
             <{/if}>
 
-            <a data-toggle="collapse" href="#forum-search" title="<{$smarty.const.THEME_FORUM_SEARCH}>" class="btn btn-info">
+            <a data-bs-toggle="collapse" href="#forum-search" title="<{$smarty.const.THEME_FORUM_SEARCH}>" class="btn btn-info">
                 <span class="fa fa-search"></span>
             </a>
 
@@ -218,7 +218,7 @@
             <{/strip}>
         </div>
 
-        <div class="col-sm-2 col-md-2"><a data-toggle="collapse" href="#forum-info" class="btn btn-info" title=""><span class="fa fa-info-sign"></span></a></div>
+        <div class="col-sm-2 col-md-2"><a data-bs-toggle="collapse" href="#forum-info" class="btn btn-info" title=""><span class="fa fa-info-sign"></span></a></div>
         <div class="col-sm-10 col-md-10 text-end xoopsform"><{$forum_jumpbox}></div>
         <!--<{$forum_addpoll}>-->
     </div>

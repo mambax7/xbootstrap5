@@ -93,7 +93,7 @@
                 <a href="<{$xoops_url}>/user.php" title="<{$smarty.const.THEME_FORUM_REGISTER}>" class="btn btn-primary"><{$smarty.const.THEME_FORUM_REGISTER}></a>
             <{/if}>
 
-            <a data-toggle="collapse" href="#forum-search" title="<{$smarty.const.THEME_FORUM_SEARCH}>" class="btn btn-info">
+            <a data-bs-toggle="collapse" href="#forum-search" title="<{$smarty.const.THEME_FORUM_SEARCH}>" class="btn btn-info">
                 <span class="fa fa-search"></span>
             </a>
 
@@ -202,7 +202,7 @@
             <{/if}>
 
             <{if $quickreply.show}>
-                <a href="#quickReply" data-toggle="collapse" title="" class="btn btn-info">Quick Reply</a>
+                <a href="#quickReply" data-bs-toggle="collapse" title="" class="btn btn-info">Quick Reply</a>
             <{/if}>
 
             <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/polls.php?op=add&topic_id=<{$topic_id}>" title="<{$smarty.const.THEME_ADD_POLL}>" class="btn btn-info"><{$smarty.const.THEME_ADD_POLL}></a>

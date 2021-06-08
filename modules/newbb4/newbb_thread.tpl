@@ -22,7 +22,7 @@
                 <{/if}>
 
                 <{if $infobox.show}>
-                    <a data-toggle="collapse" href="#<{$topic_post.post_id}>" title="<{$smarty.const.THEME_INFO}>" class="btn btn-primary btn-sm mb10"><span class="fa fa-info-sign"></span></a>
+                    <a data-bs-toggle="collapse" href="#<{$topic_post.post_id}>" title="<{$smarty.const.THEME_INFO}>" class="btn btn-primary btn-sm mb10"><span class="fa fa-info-sign"></span></a>
                     <div id="<{$topic_post.post_id}>" class="collapse">
                         <ul class="list-unstyled text-start">
                             <li><{$smarty.const._MD_JOINED}>: <{$topic_post.poster.regdate}></li>
