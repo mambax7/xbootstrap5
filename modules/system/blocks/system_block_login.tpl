@@ -1,11 +1,11 @@
 <div class="loginform">
     <form action="<{xoAppUrl user.php}>" method="post" role="form">
-        <div class="form-group">
+        <div class="mb-3">
             <{$block.lang_username}>
             <input class="form-control" type="text" name="uname" placeholder="<{$smarty.const.THEME_LOGIN}>">
         </div>
 
-        <div class="form-group">
+        <div class="mb-3">
             <{$block.lang_password}>
             <input class="form-control" type="password" name="pass" placeholder="<{$smarty.const.THEME_PASS}>">
         </div>

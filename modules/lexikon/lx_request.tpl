@@ -23,7 +23,7 @@
         <form id="sub-lex" name="<{$requestform.name}>" action="<{$requestform.action}>" method="<{$requestform.method}>" <{$requestform.extra}="">>
         <{foreach item=element from=$requestform.elements}>
         <{if $element.hidden != true}>
-            <div class="form-group">
+            <div class="mb-3">
                 <label><{$element.caption}></label>
                 <{$element.body}>
             </div>

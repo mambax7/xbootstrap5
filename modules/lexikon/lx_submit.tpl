@@ -22,7 +22,7 @@
         <form id="sub-lex" name="<{$storyform.name}>" action="<{$storyform.action}>" method="<{$storyform.method}>" <{$storyform.extra}>="">
         <{foreach item=element from=$storyform.elements}>
         <{if $element.hidden != true}>
-            <div class="form-group">
+            <div class="mb-3">
                 <label><{$element.caption}></label>
                 <{$element.body}>
             </div>
