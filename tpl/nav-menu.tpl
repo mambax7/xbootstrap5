@@ -39,14 +39,8 @@
                             <{/if}>
                         </div>
                     </li>
-                        
-                        
-                        
-                        
+
                         <li class="nav-item"><a href="javascript:;" class="nav-link"><{$smarty.const.THEME_MODULE1}></a></li>
-
-
-
 
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" href="javascript:;"><{$smarty.const.THEME_MODULE2}><b class="caret"></b></a>
@@ -74,14 +68,13 @@
 
                     </ul>
 
-
                     <{if $xoops_search|default:false}>
                         <form class="form-inline ms-auto" role="search" action="<{xoAppUrl search.php}>" method="get">
-                            <div class="form-group">
+                            <div class="input-group">
                                 <input type="text" name="query" class="form-control" placeholder="<{$smarty.const.THEME_SEARCH_TEXT}>">
                                 <input type="hidden" name="action" value="results">
+                                <button class="btn btn-primary" type="submit"><{$smarty.const.THEME_SEARCH_BUTTON}></button>
                             </div>
-                            <button class="btn btn-primary" type="submit"><{$smarty.const.THEME_SEARCH_BUTTON}></button>
                         </form>
 
                     <{/if}>
