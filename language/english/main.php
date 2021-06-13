@@ -22,16 +22,6 @@ define('THEME_SLIDE_SUBLABEL2', 'Some representative placeholder content for the
 define('THEME_SLIDE_LABEL3', 'Third slide label');
 define('THEME_SLIDE_SUBLABEL3', 'Some representative placeholder content for the third slide.');
 
-define('THEME_', 'Read');
-define('THEME_', 'Read');
-define('THEME_', 'Read');
-define('THEME_', 'Read');
-define('THEME_', 'Read');
-define('THEME_', 'Read');
-
-
-
-
 //Home Message
 define('THEME_ABOUTUS', 'About Us');
 define('THEME_LEARNINGMORE', 'Learning More...');
