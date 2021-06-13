@@ -8,8 +8,8 @@
         <div class="carousel-item active">
             <img src="<{$xoops_imageurl}>images/slider1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+                <h5><{$smarty.const.THEME_SLIDE_LABEL1}></h5>
+                <p><{$smarty.const.THEME_SLIDE_SUBLABEL1}></p>
 
                 <p><a href="<{$xoops_url}>/modules/pm" class="btn btn-large btn-primary"><{$smarty.const.THEME_READMORE}></a></p>
 
@@ -18,15 +18,15 @@
         <div class="carousel-item">
             <img src="<{$xoops_imageurl}>images/slider2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h5><{$smarty.const.THEME_SLIDE_LABEL2}></h5>
+                <p><{$smarty.const.THEME_SLIDE_SUBLABEL2}></p>
             </div>
         </div>
         <div class="carousel-item">
             <img src="<{$xoops_imageurl}>images/slider3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+                <h5><{$smarty.const.THEME_SLIDE_LABEL3}></h5>
+                <p><{$smarty.const.THEME_SLIDE_SUBLABEL3}></p>
             </div>
         </div>
     </div>
