@@ -22,9 +22,9 @@
             <{*$smarty.const._MD_LEXIKON_SYNEXPLAIN}><br>*}>
             <{$smarty.const._INFO}>:<br>
             <ul>
-                <li style="list-style-type:disc;" ;=""><{$smarty.const._MD_LEXIKON_SYNEXPLAIN1}></li>
-                <li style="list-style-type:disc;" ;=""><{$smarty.const._MD_LEXIKON_SYNEXPLAIN2}></li>
-                <li style="list-style-type:disc;" ;=""><{$smarty.const._MD_LEXIKON_SYNEXPLAIN3}></li>
+            <li style='list-style-type:disc;' ;><{$smarty.const._MD_LEXIKON_SYNEXPLAIN1}></li>
+            <li style='list-style-type:disc;' ;><{$smarty.const._MD_LEXIKON_SYNEXPLAIN2}></li>
+            <li style='list-style-type:disc;' ;><{$smarty.const._MD_LEXIKON_SYNEXPLAIN3}></li>
             </ul>
         </div>
 

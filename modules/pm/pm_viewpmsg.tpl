@@ -45,14 +45,14 @@
     <{/if}>
 </div><!-- .message-current-tab -->
 
-<{if $msg}>
+<{if $msg|default:''}>
     <div class="alert alert-info alert-dismissable">
         <button type="button" class="close" data-bs-dismiss="alert" aria-hidden="true">×</button>
         <strong><{$msg}></strong>
     </div>
 <{/if}>
 
-<{if $errormsg}>
+<{if $errormsg|default:''}>
     <div class="alert alert-danger alert-dismissable">
         <button type="button" class="close" data-bs-dismiss="alert" aria-hidden="true">×</button>
         <strong><{$errormsg}></strong>
@@ -93,7 +93,7 @@
 <{/if}>
 </div><!-- .xoops-message-list -->
 
-<{foreach item=message from=$messages}>
+<{foreach item=message from=$messages|default:null}>
     <div class="row xoops-message-list xoops-message-loop">
         <div class="col-xs-3 col-md-2">
             <input type="checkbox" id="msg_id_<{$message.msg_id}>" name="msg_id[]" value="<{$message.msg_id}>">

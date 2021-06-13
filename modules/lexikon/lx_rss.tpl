@@ -1,5 +1,5 @@
 <{if $xoops_rsscss}>
-    <!--?xml-stylesheet type="text/css" href="<{$xoops_themecss}-->"?>
+<{*<?xml-stylesheet type="text/css" href="<{$xoops_themecss}>"?>*}>
 <{/if}>
 <rss version="2.0">
     <channel>

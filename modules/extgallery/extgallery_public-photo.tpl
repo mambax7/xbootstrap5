@@ -67,7 +67,7 @@
             </div>
         <{/if}>
 
-        <{foreach item=pluginLink from=$pluginPhotoAlbumLink}>
+        <{foreach item=pluginLink from=$pluginPhotoAlbumLink|default:null}>
         <a href="<{$pluginLink.link}><{$photo.photo_id}>" title="<{$pluginLink.name}>"><{$pluginLink.name}></a>
         <{/foreach}>
         <{foreach item=pluginLink from=$photo.link}>

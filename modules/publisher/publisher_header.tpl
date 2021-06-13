@@ -5,7 +5,7 @@
             <{if $module_home}>
                 <li><{$module_home}></li>
             <{/if}>
-            <{$categoryPath}>
+            <{$categoryPath|default:''}>
         </ol>
     <{/if}>
 <{/if}>

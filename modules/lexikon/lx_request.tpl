@@ -20,19 +20,17 @@
     <div class="col-md-6 col-sm-12">
         <{$requestform.javascript}>
         <h3><{$requestform.title}></h3>
-        <form id="sub-lex" name="<{$requestform.name}>" action="<{$requestform.action}>" method="<{$requestform.method}>" <{$requestform.extra}="">>
+        <form id="sub-lex" name="<{$requestform.name}>" action="<{$requestform.action}>" method="<{$requestform.method}>" <{$requestform.extra}>="">
         <{foreach item=element from=$requestform.elements}>
-        <{if $element.hidden != true}>
-            <div class="mb-3">
-                <label><{$element.caption}></label>
+            <{if $element.hidden != true}>
+                <div class="mb-3">
+                    <label><{$element.caption}></label>
+                    <{$element.body}>
+                </div>
+            <{else}>
                 <{$element.body}>
-            </div>
-        <{else}>
-            <{$element.body}>
-        <{/if}>
+            <{/if}>
         <{/foreach}>
-
-
         </form>
     </div>
 </div>

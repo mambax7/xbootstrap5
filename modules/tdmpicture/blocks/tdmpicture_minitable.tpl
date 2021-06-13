@@ -3,10 +3,9 @@
 
 <{foreach item=blocks from=$block.blocks}>
 ">
-
 <{/foreach}>
 
-<table class="outer"><tbody><tr class="<{cycle values=" even,odd"}=""><td><a href="<{$smarty.const.TDMPICTURE_URL}>/viewfile.php?st=<{$blocks.id}>"><{$blocks.title}></a>
+<table class="outer"><tbody><tr class="<{cycle values=" even,odd"}>=""><td><a href="<{$smarty.const.TDMPICTURE_URL}>/viewfile.php?st=<{$blocks.id}>"><{$blocks.title}></a>
     (<{$smarty.const._MD_TDMPICTURE_COMMENT}>: <{$blocks.comments}>
     - <{$smarty.const._MD_TDMPICTURE_VOTE}>: <{$blocks.counts}>/<{$blocks.votes}>)
     </td>

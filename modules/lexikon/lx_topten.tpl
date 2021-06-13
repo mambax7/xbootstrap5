@@ -43,7 +43,7 @@
             <td class="head" width="8%" align="right"><{$lang_def}></td>
         </tr>
         <!-- Start links loop -->
-        <tr class="<{cycle values=" even,odd"}=""></tr><tr>
+        <tr class="<{cycle values=" even,odd"}>=""></tr><tr>
         <td class="even"><{$terms.rank}></td>
 <td class=" odd
         "><a title="<{$terms.definition}>" href="<{$xoops_url}>/modules/<{$lang_moduledirname}>/entry.php?entryID=<{$terms.id}>"><{$terms.title}></a>

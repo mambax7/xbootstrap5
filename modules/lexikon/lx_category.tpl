@@ -161,7 +161,9 @@
                         <td>
                             <{if $eachcat.image != "" && $show_screenshot == '1'}>
                                 <a href="<{$xoops_url}>/modules/<{$lang_moduledirname}>/category.php?categoryID=<{$eachcat.id}>" target="_parent">
-                                    <img src="<{$xoops_url}>/uploads/lexikon/categories/images/<{$eachcat.image}>" width="<{$imgcatwd}>" align="bottom" vspace="2" hspace="2" border="0" alt="[<{$eachcat.name}>]">
+                                    <img src="<{$xoops_url}>/uploads/lexikon/categories/images/<{$eachcat.image}>" 
+                                    width="<{$imgcatwd}>" align="bottom" vspace="2" hspace="2" border="0" 
+                                    alt="[<{$eachcat.name}>]">
                                 </a>
                             <{/if}>
                             <{$eachcat.description}>
@@ -172,8 +174,8 @@
                 </table>
             <{/foreach}>
             <div align="left"><{$catsarray.navbar}></div>
-            <div align="center"> [ <a href="javascript:history.go(-1)"><{$smarty.const._MD_LEXIKON_RETURN}></a><b> | </b>
-                <a href="./index.php"><{$smarty.const._MD_LEXIKON_RETURN2INDEX}></a> ]
+    <div align="center"> [ <a href='javascript:history.go(-1)'><{$smarty.const._MD_LEXIKON_RETURN}></a><b> | </b>
+        <a href='./index.php'><{$smarty.const._MD_LEXIKON_RETURN2INDEX}></a> ]
             </div>
             <{* syndication *}>
             <{if $syndication == true}>
@@ -208,11 +210,11 @@
         <{/if}>
     </div>
 </div><!-- END ROW -->
-<div align="left"><{$entriesarray.navbar}></div>
+<div align='left'><{$entriesarray.navbar}></div>
 
-<div align="center">
-    [ <a href="javascript:history.go(-1)"><{$smarty.const._MD_LEXIKON_RETURN}></a><b> | </b>
-    <a href="./index.php"><{$smarty.const._MD_LEXIKON_RETURN2INDEX}></a> ]
+<div align='center'> 
+    [ <a href='javascript:history.go(-1)'><{$smarty.const._MD_LEXIKON_RETURN}></a><b> | </b>
+    <a href='./index.php'><{$smarty.const._MD_LEXIKON_RETURN2INDEX}></a> ]
 </div>
 
 <{* syndication *}>

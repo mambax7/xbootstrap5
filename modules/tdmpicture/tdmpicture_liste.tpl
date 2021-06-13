@@ -33,7 +33,7 @@
 
     <div class="even outer">
         <ul id="display" class="display">
-            <{foreach item=file from=$file}>
+            <{foreach item=file from=$file|default:null}>
                 <li>
 
                     <div class="switch_img">

@@ -1,13 +1,13 @@
 <div class="tdmdownloads">
     <div class="breadcrumb"><{$category_path}></div>
 
-    <{if $cat_description != ""}>
+    <{if $cat_description|default:'' != ''}>
         <blockquote>
             <small><{$cat_description}></small>
         </blockquote>
     <{/if}>
 
-    <{foreach item=category from=$subcategories}>
+    <{foreach item=category from=$subcategories|default:null}>
     <a title="<{$category.title}>" href="<{$xoops_url}>/modules/tdmdownloads/viewcat.php?cid=<{$category.id}>"><{$category.title}></a>
     <a title="<{$category.title}>" href="<{$xoops_url}>/modules/tdmdownloads/viewcat.php?cid=<{$category.id}>"><{$category.totaldownloads}></a>
 
@@ -26,7 +26,7 @@
         <{/foreach}>
 
         <a title="<{$smarty.const._MD_TDMDOWNLOADS_RSS}>" href="<{$xoops_url}>/modules/tdmdownloads/rss.php?cid=<{$category_id}>">
-            <img src="images/rss.gif" alt="<{$smarty.const._MD_TDMDOWNLOADS_RSS}>">
+            <img src="assets/images/rss.gif" alt="<{$smarty.const._MD_TDMDOWNLOADS_RSS}>">
         </a>
 
         <div class="tdm-downloads-info row">
@@ -81,7 +81,7 @@
         </div><!-- .downloads-info -->
 
         <div class="row order-by">
-            <{if $navigation == true}>
+            <{if $navigation|default:false == true}>
                 <div class="col-md-12"><h3 class="tdm-title"><{$smarty.const._MD_TDMDOWNLOADS_CAT_SORTBY}></h3></div>
                 <div class="col-xs-3 col-sm-3 col-md-3">
                     <{$smarty.const._MD_TDMDOWNLOADS_CAT_TITLE}>
@@ -125,7 +125,7 @@
             <{/if}>
         </div><!-- .tdm-order-by -->
 
-        <{if $file != ""}>
+        <{if $file|default:'' != ''}>
             <h3 class="tdm-title"><{$smarty.const._MD_TDMDOWNLOADS_CAT_LIST}>:</h3>
             <{section name=i loop=$file}><{include file="db:tdmdownloads_download.tpl" down=$file[i]}><{/section}>
             <{if $pagenav != ''}><{$pagenav}><{/if}>

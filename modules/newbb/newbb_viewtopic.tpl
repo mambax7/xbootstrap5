@@ -14,7 +14,7 @@
         <li class="active"><{$topic_title|strip_tags}> <{if $topicstatus}><{$topicstatus}><{/if}></li>
     </ol>
 
-    <{if $tagbar}>
+    <{if $tagbar|default:''}>
         <div class="newbb-tagbar">
             <{include file="db:tag_bar.tpl"}>
         </div><!-- .newbb-tagbar -->
@@ -74,7 +74,7 @@
     </div>
 
     <{if $mode lte 1}>
-        <{if $topic_poll}>
+        <{if $topic_poll|default:''}>
             <{if $topic_pollresult}>
                 <{include file="db:newbb_poll_results.tpl" poll=$poll}>
             <{else}>
@@ -143,7 +143,7 @@
                         <option value="<{$act.link}>"><{$act.name}></option>
                     <{/foreach}>
                 <{/if}>
-                <{if $adminpoll_actions|is_array && count($adminpoll_actions) > 0 }>
+                <{if $adminpoll_actions|default:''|is_array && count($adminpoll_actions) > 0 }>
                     <option value="">--------</option>
                     <option value=""><{$smarty.const._MD_NEWBB_POLLOPTIONADMIN}></option>
                     <{foreach item=actpoll from=$adminpoll_actions}>
@@ -236,7 +236,7 @@
 <!--
     <script type="text/javascript">
     if (document.body.scrollIntoView && window.location.href.indexOf('#') == -1){
-        var el = xoopsGetElementById('<{$forum_post_prefix}><{$post_id}>');
+        var el = xoopsGetElementById('<{$forum_post_prefix|default:''}><{$post_id}>');
         if (el){
             el.scrollIntoView(true);
         }
@@ -248,7 +248,7 @@
 <!-- START irmtfan add scroll js function to scroll down to current post or top of the topic -->
 <script type="text/javascript">
     if (document.body.scrollIntoView && window.location.href.indexOf('#') == -1) {
-        var el = xoopsGetElementById('<{$forum_post_prefix}><{$post_id}>');
+        var el = xoopsGetElementById('<{$forum_post_prefix|default:''}><{$post_id}>');
         if (el) {
             banner.destroy();
             header.destroy();

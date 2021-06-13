@@ -56,7 +56,7 @@
                 <td><{$smarty.const._MD_LEXIKON_LOCATION}></td>
                 <td><{$smarty.const._MD_LEXIKON_WWW}></td>
             </tr>
-            <tr class="<{cycle values=" even,odd"}=""><td align="center"><{$author.id}></td><td align=" center
+            <tr class="<{cycle values=" even,odd"}>=""><td align="center"><{$author.id}></td><td align=" center
             "><{$author.email}></td>
             <td align="center" style="font-size:12px;"><a href="<{$xoops_url}>/modules/<{$lang_moduledirname}>/profile.php?uid=<{$author.uid}>"><{$author.name}></a>
             </td>

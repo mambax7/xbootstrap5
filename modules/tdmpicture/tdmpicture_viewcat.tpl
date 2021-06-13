@@ -60,7 +60,7 @@
 
 
         <!-- Display navigation  -->
-        <div align="center"><{$nav_page}></div>
+        <div align="center"><{$nav_page|default:''}></div>
         <br>
         <!-- AddThis Button BEGIN -->
     <{if $smarty.const.TDMPICTURE_SOCIAL}>

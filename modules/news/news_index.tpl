@@ -1,5 +1,5 @@
 <div class="news-home">
-    <{if $topic_rssfeed_link != ""}>
+    <{if $topic_rssfeed_link|default:'' != ''}>
         <{$topic_rssfeed_link}>
     <{/if}>
 

@@ -19,7 +19,7 @@
                         </a>
 
                         <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/list.topic.php?status=pending#admin" title="<{$smarty.const._MD_TYPE_PENDING}>" class="btn btn-xs btn-primary">
-                            <{if $wait_new_topic}><span class="badge"><{$wait_new_topic}></span><{/if}> <{$smarty.const._MD_TYPE_PENDING}>
+                            <{if $wait_new_topic|default:false}><span class="badge"><{$wait_new_topic}></span><{/if}> <{$smarty.const._MD_TYPE_PENDING}>
                         </a>
 
                         <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/list.topic.php?status=deleted#admin" title="<{$smarty.const._MD_TYPE_DELETED}>" class="btn btn-xs btn-danger">
@@ -38,7 +38,7 @@
                         </a>
 
                         <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/viewpost.php?status=pending#admin" title="<{$smarty.const._MD_TYPE_PENDING}>" class="btn btn-xs btn-primary">
-                            <{if $wait_new_post}>(<span style="color:red;"><{$wait_new_post}></span>)<{/if}> <{$smarty.const._MD_TYPE_PENDING}>
+                            <{if $wait_new_post|default:false}>(<span style="color:red;"><{$wait_new_post}></span>)<{/if}> <{$smarty.const._MD_TYPE_PENDING}>
                         </a>
 
                         <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/viewpost.php?status=deleted#admin" title="<{$smarty.const._MD_TYPE_DELETED}>" class="btn btn-xs btn-primary">

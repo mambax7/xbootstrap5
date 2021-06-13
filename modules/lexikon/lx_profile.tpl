@@ -26,10 +26,10 @@
 <div class="clearer">
     <div style="text-align: left; font-size: small;">
         <{if $nothing==false}>
-            <img src="<{$xoops_url}>/modules/<{$lang_moduledirname}>/assets/images/square-green.gif" align="absmiddle">
+            <img src='<{$xoops_url}>/modules/<{$lang_moduledirname}>/assets/images/square-green.gif' align='absmiddle'>
             <{$submitted}>
             <br>
-            <img src="<{$xoops_url}>/modules/<{$lang_moduledirname}>/assets/images/square-red.gif" align="absmiddle">
+            <img src='<{$xoops_url}>/modules/<{$lang_moduledirname}>/assets/images/square-red.gif' align='absmiddle'>
             <{$waiting}>
         <{/if}>
         <br><br>
@@ -54,7 +54,7 @@
             <td><{$smarty.const._MD_LEXIKON_TERMS}></td>
             <td><{$smarty.const._MD_LEXIKON_HITS}></td>
         </tr>
-        <tr class="<{cycle values=" even,odd"}=""><td align="center" style="font-size:11px;"><{$d.date}></td>
+        <tr class="<{cycle values=" even,odd"}>=""><td align="center" style="font-size:11px;"><{$d.date}></td>
 <td align=" left
         "><a href="entry.php?entryID=<{$d.id}>"><{$d.name}></a></td>
         <td align="center"><{$d.counter}></td>

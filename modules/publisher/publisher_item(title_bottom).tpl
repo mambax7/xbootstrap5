@@ -42,7 +42,7 @@
         </figure>
     <{/if}>
     <header>
-        <h2 <{if="" !$item.image_path}="">class="no-top-margin"<{/if}>><{$item.title}></h2>
+        <h2 <{if !$item.image_path}="">class="no-top-margin"<{/if}>><{$item.title}></h2>
         <{if $show_subtitle && $item.subtitle}>
             <h5><{$item.subtitle}></h5>
         <{/if}>

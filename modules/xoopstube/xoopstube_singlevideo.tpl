@@ -45,7 +45,7 @@
                 </li>
 
                 <{if $video.useradminvideo}>
-                    <li><i class="fa fa-pencil-square-o"></i><{$video.usermodify}></li>
+                    <li><i class="fa fa-pencil-square-o"></i><{$video.usermodify|default:''}></li>
                 <{/if}>
 
                 <li><i class="fa fa-share-alt"></i>
@@ -69,7 +69,7 @@
                     </li>
                 <{/if}>
 
-                <{if $tagbar}>
+                <{if $tagbar|default:false}>
                     <li><{include file="db:tag_bar.tpl"}></li>
                 <{/if}>
 
