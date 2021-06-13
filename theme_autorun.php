@@ -1,3 +1,3 @@
 <?php
-xoops_load('XoopsFormRendererBootstrap4');
-XoopsFormRenderer::getInstance()->set(new XoopsFormRendererBootstrap4());
+xoops_load('XoopsFormRendererBootstrap5');
+XoopsFormRenderer::getInstance()->set(new XoopsFormRendererBootstrap5());
