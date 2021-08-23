@@ -29,7 +29,7 @@
         </div>
 
         <form name="<{$yform.name}>" action="" method="<{$yform.method}>"
-        <{$yform.extra}=""> >
+        <{$yform.extra}>="" >
         <label><{$yform.elements.txt.caption}></label>
         <{$yform.elements.txt.body}>
         <input type="button" value="select" style="margin-top: 5px" class="btn btn-primary btn-sm form-control" onclick="this.form.txt.focus();this.form.txt.select(); document.execCommand('Copy')">

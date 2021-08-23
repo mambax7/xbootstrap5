@@ -1,6 +1,6 @@
 <{foreach item=user from=$block.users}>
     <ul class="userblock list-unstyled">
-        <{if $user.avatar != ""}>
+        <{if $user.avatar|default:'' != ''}>
             <li class="avatar-image"><img src="<{$user.avatar}>" alt="<{$user.name}>" class="rounded-circle"></li>
         <{else}>
             <li class="avatar-image"><img src="<{$xoops_imageurl}>images/blank.gif" alt="<{$user.name}>" class="rounded-circle"></li>

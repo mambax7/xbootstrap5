@@ -136,7 +136,7 @@
 <!-- End Attached Files -->
 
 <!-- Items by same Author -->
-<{if $perm_author_items && $item.uid != 0}>
+<{if $perm_author_items && $item.uid|default:0 != 0}>
     <div class="pub_article_extras">
         <div class="btn btn-primary btn-lg w-100">
             <a href="<{$publisher_url}>/author_items.php?uid=<{$item.uid}>">
@@ -206,7 +206,7 @@
 <{/if}>
 <!-- END Other articles in the category -->
 
-<{if $tagbar}>
+<{if $tagbar|default:false}>
     <p><{include file="db:tag_bar.tpl"}></p>
 <{/if}>
 

@@ -21,7 +21,7 @@
     <!-- Start item loop -->
     <{foreach item=item from=$items}>
         <div class="article_full">
-            <div class="article_full_category">
+            <div class="article_full_category_b5">
                 <{$item.category}>
             </div>
 
@@ -32,7 +32,7 @@
                     </a>
                 </div>
             <{/if}>
-            <div style="padding: 10px;">
+            <div class="pt-5" style="padding: 10px;">
                 <h4><{$item.titlelink}></h4>
                 <{if $display_whowhen_link}>
                     <small><{$item.who_when}> (<{$item.counter}> <{$lang_reads}>)</small>

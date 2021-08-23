@@ -119,11 +119,11 @@
                 </div>
                 <!-- start comments loop -->
                 <div style="margin: 3px; padding: 3px;">
-                    <{if $comment_mode == "flat"}>
-                        <{include file="db:system_comments_flat.tpl"}>
-                    <{elseif $comment_mode == "thread"}>
-                        <{include file="db:system_comments_thread.tpl"}>
-                    <{elseif $comment_mode == "nest"}>
+    <{if $comment_mode|default:'' == "flat"}>
+        <{include file="db:system_comments_flat.tpl"}>
+    <{elseif $comment_mode|default:'' == "thread"}>
+        <{include file="db:system_comments_thread.tpl"}>
+    <{elseif $comment_mode|default:'' == "nest"}>
                         <{include file="db:system_comments_nest.tpl"}>
                     <{/if}>
                 </div>

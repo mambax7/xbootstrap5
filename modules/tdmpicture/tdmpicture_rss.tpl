@@ -11,7 +11,7 @@
         <managingeditor><{$channel_editor}></managingeditor>
         <webmaster><{$channel_webmaster}></webmaster>
         <language><{$channel_language}></language>
-        <{if $image_url != ""}>
+        <{if $image_url|default:'' != ''}>
             <img>
             <title><{$channel_title}></title>
             <url><{$image_url}></url>
