@@ -1,14 +1,18 @@
-5.00 Beta 5 2021-08-23
+5.1.3 Beta 1 2021-10-31
+-------------------
+- updated to Bootstrap 5.1.3 Final (mamba)
+
+5.1.0 Beta 1 2021-08-23
 -------------------
 - updated to Bootstrap 5.1.0 Final (mamba)
 
-5.00 Beta 4 2021-06-07
+5.0.1 Beta 1 2021-06-07
 -------------------
 - updated to Bootstrap 5.0.1 Final (mamba)
 - added slide labels as language constants (mamba)
 - PHP 8 default updates in templates (mamba)
 
-5.00 Beta 3 2021-05-07
+5.00 Beta 1 2021-05-07
 -------------------
 - updated to Bootstrap 5.0 Final (mamba)
 
