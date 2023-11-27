@@ -47,7 +47,7 @@
 
         <ul class="pagination pagination-sm">
             <li class="nav-item"><a class="nav-link" href="<{$xoops_url}>/modules/<{$lang_moduledirname}>/letter.php" title="[ <{$publishedwords}> ]"><{$smarty.const._MD_LEXIKON_ALL}></a></li>
-            <{foreach item=letterlinks from=$alpha.initial}>
+            <{foreach item=letterlinks from=$alpha.initial|default:null}>
                 <{if $letterlinks.total > 0}>
                     <li class="nav-item"><a class="nav-link" href="<{$xoops_url}>/modules/<{$lang_moduledirname}>/letter.php?init=<{$letterlinks.id}>" title="[ <{$letterlinks.total}> ]">
                             <{$letterlinks.linktext}>
@@ -79,7 +79,7 @@
                 <h3> <{$smarty.const._MD_LEXIKON_BROWSECAT}> </h3>
             </div>
         </div>
-        <{foreach item=catlinks from=$block0.categories}>
+        <{foreach item=catlinks from=$block0.categories|default:null}>
 
             <{if $catlinks.count is div by 4}>
 
@@ -126,7 +126,7 @@
                 <h3> <{$smarty.const._MD_LEXIKON_BROWSECAT}> </h3>
             </div>
         </div>
-        <{foreach item=catlinks from=$block0.categories}>
+        <{foreach item=catlinks from=$block0.categories|default:null}>
 
             <{if $catlinks.count is div by 4}>
 

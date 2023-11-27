@@ -1,4 +1,4 @@
-<{if $xoops_rsscss}>
+<{if isset($xoops_rsscss)}>
 <{*<?xml-stylesheet type="text/css" href="<{$xoops_themecss}>"?>*}>
 <{/if}>
 <rss version="2.0">
@@ -11,7 +11,7 @@
         </description>
         <lastbuilddate><{$channel_lastbuild}>
         </lastbuilddate>
-        <docs>http://backend.userland.com/rss/</docs>
+        <docs>https://backend.userland.com/rss/</docs>
         <generator><{$channel_generator}>
         </generator>
         <category><{$channel_category}>
@@ -36,7 +36,7 @@
                 </height>
             
         <{/if}>
-        <{foreach item=item from=$items}>
+        <{foreach item=item from=$items|default:null}>
             <item>
                 <title><{$item.title}>
                 </title>
