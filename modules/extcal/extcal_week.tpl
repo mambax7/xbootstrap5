@@ -10,7 +10,7 @@
 <div class="extcalform mb10 text-center">
     <form action="<{$navigSelectBox.action}>" method="<{$navigSelectBox.method}>">
         <ul class="list-inline">
-            <{foreach item=element from=$navigSelectBox.elements}>
+            <{foreach item=element from=$navigSelectBox.elements|default:null}>
             <li><{$element.body}></li>
             <{/foreach}>
         </ul>
@@ -21,7 +21,7 @@
 
 <div class="table-responsive">
 
-    <{foreach item=event from=$events}>
+    <{foreach item=event from=$events|default:null}>
 
     <{/foreach}>
     <table class="table table-bordered table-hover">
@@ -43,7 +43,7 @@
         </tr>
         <tr>
             <th colspan="3">
-                <{foreach item=cat from=$cats}>
+                <{foreach item=cat from=$cats|default:null}>
                     <div style="float:left; margin-left:5px;">
                         <div style="float:left; background-color:#<{$cat.cat_color}>; border:1px solid white; margin-right:5px;">
                             &nbsp;

@@ -83,7 +83,7 @@
                 onchange="if(this.options[this.selectedIndex].value.length >0 )    { window.document.location=this.options[this.selectedIndex].value;}"
         >
             <option value=""><{$smarty.const._MD_NEWBB_VIEWMODE}></option>
-            <{foreach item=act from=$viewmode_options}>
+            <{foreach item=act from=$viewmode_options|default:null}>
             <option value="<{$act.link}>"><{$act.title}></option>
             <{/foreach}>
         </select>

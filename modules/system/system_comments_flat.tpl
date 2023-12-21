@@ -7,9 +7,9 @@
         <{include file="db:system_comment.tpl" comment=$comment}>
     <{/foreach}>
 
-    <{if $commentform}>
+    <{if isset($commentform)}>
         <div class="aligncenter">
-            <button class="btn-comment btn btn-primary btn-md" data-bs-toggle="modal" data-target="#comments-form">
+            <button class="btn-comment btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#comments-form">
                 <span class="fa fa-comment"></span> Add Comment
             </button>
         </div>

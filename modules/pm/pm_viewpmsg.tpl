@@ -129,13 +129,13 @@
 <{/foreach}>
 
 <{$pmform.elements.send.body}>
-<{if $display}>
+<{if isset($display)}>
     <{$pmform.elements.move_messages.body}>
     <{$pmform.elements.delete_messages.body}>
     <{$pmform.elements.empty_messages.body}>
 <{/if}>
 
-<{foreach item=element from=$pmform.elements}>
+<{foreach item=element from=$pmform.elements|default:null}>
     <{if $element.hidden == 1}>
         <{$element.body}>
     <{/if}>

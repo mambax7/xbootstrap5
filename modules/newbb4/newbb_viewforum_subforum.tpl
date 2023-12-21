@@ -3,7 +3,7 @@
 </a>
 <div class="newbb-subforum mb10 clearfix">
     <div class="collapse" id="xoops-subforum">
-        <{foreach item=sforum from=$subforum}>
+        <{foreach item=sforum from=$subforum|default:null}>
         <ul class="subforum-loop list-unstyled clearfix">
             <li class="col-xs-12 col-md-6">
                 <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/viewforum.php?forum=<{$sforum.forum_id}>" title="<{$sforum.forum_name}>">
@@ -28,7 +28,7 @@
                     <!-- If subforum description -->
                     <{if $sforum.forum_desc|default:'' != ''}>
                         <li>
-                            <button class="btn btn-xs btn-info" data-bs-toggle="modal" data-target="#subforum-<{$sforum.forum_id}>">
+                            <button class="btn btn-xs btn-info" data-bs-toggle="modal" data-bs-target="#subforum-<{$sforum.forum_id}>">
                                 <span class="fa fa-info-sign"></span>
                             </button>
                         </li>

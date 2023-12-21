@@ -7,7 +7,7 @@
                 <strong class="pull-right hit-counter"><{$story.hits}> <{$lang_reads}></strong>
 
                 <h2 class="news-title" role="heading"><{$story.topic_title}> <{$story.news_title}></h2>
-                <a title="<{$story.news_title|strip_tags}>" data-bs-toggle="modal" data-target="#myModal" href="#myModal">
+                <a title="<{$story.news_title|strip_tags}>" data-bs-toggle="modal" data-bs-target="#myModal" href="#myModal">
                     <img src="<{$story.picture}>" alt="<{$story.news_title|strip_tags}>">
                 </a>
             </div>
@@ -17,7 +17,7 @@
                 <em><strong><{$lang_postedby}>: </strong><{$story.poster}><{/if}><{$lang_on}> <{$story.posttime}></em>
             <strong class="pull-right hit-counter"><{$story.hits}> <{$lang_reads}></strong>
         <{/if}>
-        <{if $story.files_attached}>
+        <{if $story.files_attached|default:''}>
             <{$story.attached_link}>
         <{/if}>
         <{$story.text}>

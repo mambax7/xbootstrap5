@@ -63,7 +63,7 @@
             <input type="hidden" name="op" id="op" value="save">
             <input type="hidden" name="contact_id" id="contact_id" value="">
             <input type="hidden" name="contact_uid" id="contact_uid" value="0">
-            <!--<div class="g-recaptcha" data-sitekey="<{$recaptchakey}>" data-callback="YourOnSubmitFn"></div>-->
+            <!--<div class="g-recaptcha" data-bs-sitekey="<{$recaptchakey}>" data-bs-callback="YourOnSubmitFn"></div>-->
             <div class="center">
                 <input type="submit" class="btn btn-primary center" name="submit" id="submit" value="<{$smarty.const._MD_MYTHEME_SUBMIT}>" title="<{$smarty.const._MD_MYTHEME_SUBMIT}>" style="margin:10px 0;border:1px solid black;border-radius:8px;">
             </div>

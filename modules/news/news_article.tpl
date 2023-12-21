@@ -2,14 +2,14 @@
 
 <{if $attached_files_count>0}>
     <{$lang_attached_files}>
-    <{foreach item=onefile from=$attached_files}>
+    <{foreach item=onefile from=$attached_files|default:null}>
         <a href="<{$onefile.visitlink}>" target="_blank"><{$onefile.file_realname}></a>
     <{/foreach}>
 <{/if}>
 
 <div class="row xoops-news-navigation">
     <{if $pagenav|default:false}><{$smarty.const._NW_PAGE}><{$pagenav}><{/if}>
-    <{if $nav_links}>
+    <{if isset($nav_links)}>
         <div class="col-md-6 alignleft">
             <{if $previous_story_id != -1}>
                 <a href="<{$xoops_url}>/modules/news/article.php?storyid=<{$previous_story_id}>" title="<{$previous_story_title}>">
@@ -40,7 +40,7 @@
         </a>
     <{/if}>
 
-    <{if $xoops_isadmin}>
+    <{if isset($xoops_isadmin)}>
         <a href="<{$xoops_url}>/modules/news/submit.php?op=edit&storyid=<{$story.id}>" title="Edit">
             <span class="fa fa-pencil-square-o"></span>
         </a>
@@ -50,13 +50,13 @@
     <{/if}>
 </div>
 
-<{if $tags}>
+<{if isset($tags)}>
     <{include file="db:tag_bar.tpl"}>
 <{/if}>
 
 <{if $showsummary == true && $summary_count>0}>
     <{$lang_other_story}>
-    <{foreach item=onesummary from=$summary}>
+    <{foreach item=onesummary from=$summary|default:null}>
         <{$onesummary.story_published}>
         <a href="<{$xoops_url}>/modules/news/article.php?storyid=<{$onesummary.story_id}>" title="<{$onesummary.tpltitle}>">
             <{$onesummary.story_title}>
@@ -65,7 +65,7 @@
 <{/if}>
 
 <{if $share == true}>
-    <div class='shareaholic-canvas' data-app='share_buttons' data-app-id=''></div>
+    <div class='shareaholic-canvas' data-bs-app='share_buttons' data-bs-app-id=''></div>
 <{/if}>
 
 <div class="comments-nav">
@@ -74,12 +74,14 @@
 
 <{$lang_notice}>
 
-    <{if $comment_mode|default:'' == "flat"}>
+<{if isset($comment_mode)}>
+    <{if $comment_mode == "flat"}>
         <{include file="db:system_comments_flat.tpl"}>
-    <{elseif $comment_mode|default:'' == "thread"}>
+    <{elseif $comment_mode == "thread"}>
         <{include file="db:system_comments_thread.tpl"}>
-    <{elseif $comment_mode|default:'' == "nest"}>
-    <{include file="db:system_comments_nest.tpl"}>
+    <{elseif $comment_mode == "nest"}>
+        <{include file="db:system_comments_nest.tpl"}>
+    <{/if}>
 <{/if}>
 
 <{include file='db:system_notification_select.tpl'}>

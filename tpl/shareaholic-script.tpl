@@ -3,9 +3,9 @@
 <{assign var='siteId' value='n/a'}>
 <{if $siteId != 'n/a'}>
     <script type='text/javascript'
-            data-cfasync='false'
+            data-bs-cfasync='false'
             src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js'
-            data-shr-siteid='<{$siteId}>'
+            data-bs-shr-siteid='<{$siteId}>'
             async='async'>
     </script>
 <{/if}>
