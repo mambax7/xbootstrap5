@@ -13,14 +13,14 @@
                             </h4>
 
                             <p>
-                                <{if $item.item_image|default:'' != ''}>
+                                <{if !empty($item.item_image)}>
                                     <img src="<{$item.item_image}>" alt="<{$item.item_cleantitle}>" align="left" width="120">
                                 <{/if}>
                                 <{$item.item_summary}>
                             </p>
                         </div>
 
-                        <{if $item.subitem}>
+                        <{if !empty($item.subitem)}>
                             <strong class="publisher-more"><{$smarty.const._MB_PUBLISHER_MORE}></strong>
                             <ul class="publisher-links">
                                 <{foreach item=subitem from=$item.subitem|default:null}>
@@ -51,7 +51,7 @@
                     <div style="float:right; width:60%;">
 
                         <div class="publisher-content clearfix">
-                            <{if $item.item_image|default:'' != ''}>
+                            <{if !empty($item.item_image)}>
                                 <img src="<{$item.item_image}>" alt="<{$item.item_cleantitle}>" align="right" width="100">
                             <{/if}>
                             <p><{$item.item_summary}></p>

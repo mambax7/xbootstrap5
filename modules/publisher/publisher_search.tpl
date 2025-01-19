@@ -37,7 +37,7 @@
         <label class="col-sm-2 control-label"><{$smarty.const._CO_PUBLISHER_CATEGORY}></label>
 
         <div class="col-sm-10">
-            <{$category_select}>
+            <{$category_select|default:''}>
         </div>
     </div>
     <div class="mb-3">
