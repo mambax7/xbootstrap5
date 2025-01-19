@@ -26,9 +26,9 @@
                 <strong><{$smarty.const._MD_NEWBB_BROWSING}> </strong>
                 <{foreach item=user from=$online.users|default:null}>
                     <a href="<{$user.link}>">
-                        <{if $user.level eq 2}><!-- If is admin -->
+                        <{if $user.level == 2}><!-- If is admin -->
                             <label class="label label-success"><{$user.uname}></label>
-                        <{elseif $user.level eq 1}><!-- If is moderator -->
+                        <{elseif $user.level == 1}><!-- If is moderator -->
                             <label class="label label-warning"><{$user.uname}></label>
                         <{else}>
                             <label class="label label-info"><{$user.uname}></label>
@@ -44,17 +44,17 @@
     <{/if}>
 
     <div class="row mb10">
-        <{if $viewer_level gt 1}>
+        <{if $viewer_level >= 1}>
             <div class="col-sm-8 col-md-8">
-                <{if $mode gt 1}>
+                <{if $mode >= 1}>
                     <form name="form_posts_admin" action="action.post.php" method="POST" onsubmit="if(window.document.form_posts_admin.op.value &lt; 1){return false;}">
                     <{$smarty.const._ALL}>: <input type="checkbox" name="post_check" id="post_check" value="1" onclick="xoopsCheckAll('form_posts_admin', 'post_check');">
                     <select name="op">
                         <option value="0"><{$smarty.const._SELECT}></option>
                         <option value="delete"><{$smarty.const._DELETE}></option>
-                        <{if $status eq "pending"}>
+                        <{if $status == "pending"}>
                             <option value="approve"><{$smarty.const._MD_NEWBB_APPROVE}></option>
-                        <{elseif $status eq "deleted"}>
+                        <{elseif $status == "deleted"}>
                             <option value="restore"><{$smarty.const._MD_NEWBB_RESTORE}></option>
                         <{/if}>
                     </select>
@@ -68,7 +68,7 @@
                 <{/if}>
             </div>
         <{/if}>
-        <div class="<{if $viewer_level gt 1}>col-sm-4 col-md-4<{else}>col-sm-12 col-md-12<{/if}> generic-pagination text-end">
+        <div class="<{if $viewer_level >= 1}>col-sm-4 col-md-4<{else}>col-sm-12 col-md-12<{/if}> generic-pagination text-end">
             <{$forum_page_nav|replace:'form':'div'|replace:'id="xo-pagenav"':''}>
         </div>
     </div>
@@ -87,7 +87,7 @@
         <div class="col-sm-6 col-md-6">
             <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/reply.php?topic_id=<{$topic_id}>" title="<{$smarty.const.THEME_FORUM_REPLY}>" class="btn btn-primary"><{$smarty.const.THEME_FORUM_REPLY}></a>
 
-            <{if $viewer_level gt 1}>
+            <{if $viewer_level >= 1}>
                 <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/newtopic.php?forum=<{$forum_id}>" title="<{$smarty.const.THEME_FORUM_NEWTOPIC}>" class="btn btn-primary"><{$smarty.const.THEME_FORUM_NEWTOPIC}></a>
             <{else}>
                 <a href="<{$xoops_url}>/user.php" title="<{$smarty.const.THEME_FORUM_REGISTER}>" class="btn btn-primary"><{$smarty.const.THEME_FORUM_REGISTER}></a>
@@ -138,7 +138,7 @@
         <div class="<{if isset($rating_enable)}>col-sm-4 col-md-4<{else}>col-sm-8 col-md-8<{/if}>">
             <select class="form-control" name="topicoption" id="topicoption" onchange="if(this.options[this.selectedIndex].value.length >0 ) { window.document.location=this.options[this.selectedIndex].value;}">
                 <option value=""><{$smarty.const._MD_NEWBB_TOPICOPTION}></option>
-                <{if $viewer_level gt 1}>
+                <{if $viewer_level >= 1}>
                     <{foreach item=act from=$admin_actions|default:null}>
                         <option value="<{$act.link}>"><{$act.name}></option>
                     <{/foreach}>
@@ -176,7 +176,7 @@
         </div>
     </div>
 
-    <{if $viewer_level gt 1 && $topic_status == 1}>
+    <{if $viewer_level >= 1 && $topic_status == 1}>
         <{$smarty.const._MD_NEWBB_TOPICLOCK}>
     <{/if}>
 
@@ -186,7 +186,7 @@
         <{$smarty.const._MD_NEWBB_ERRORPOST}>
     <{/foreach}>
 
-    <{if $mode gt 1}>
+    <{if $mode >= 1}>
     </form>
     <{/if}>
 
@@ -195,7 +195,7 @@
         <div class="col-sm-6 col-md-6 hidden-xs">
             <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/reply.php?topic_id=<{$topic_id}>" title="<{$smarty.const.THEME_FORUM_REPLY}>" class="btn btn-primary"><{$smarty.const.THEME_FORUM_REPLY}></a>
 
-            <{if $viewer_level gt 1}>
+            <{if $viewer_level >= 1}>
                 <a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/newtopic.php?forum=<{$forum_id}>" title="<{$smarty.const.THEME_FORUM_NEWTOPIC}>" class="btn btn-primary"><{$smarty.const.THEME_FORUM_NEWTOPIC}></a>
             <{else}>
                 <a href="<{$xoops_url}>/user.php" title="<{$smarty.const.THEME_FORUM_REGISTER}>" class="btn btn-primary"><{$smarty.const.THEME_FORUM_REGISTER}></a>

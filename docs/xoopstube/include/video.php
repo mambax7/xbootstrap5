@@ -91,7 +91,7 @@ function xtube_videothumb($vidid, $title, $source, $picurl, $screenshot, $width 
 
         // MetaCafe
         case 1:
-            list($metaclip) = preg_split('[/]', $vidid);
+            [$metaclip] = preg_split('[/]', (string) $vidid);
             $videothumb['metathumb'] = $metaclip;
             $thumb                   = '<img src="https://www.metacafe.com/thumb/' . $videothumb['metathumb'] . '.jpg" title="' . $title . '" alt="' . $title . '" width="' . $width . '" height="' . $height . '" style="padding: 0px; border-style: none;" />';
             break;
@@ -164,7 +164,7 @@ function xtube_videopublisher($vidid, $publisher, $source = 0)
         // Determine if video source Photobucket for publisher
         case 3:
             $string = 'th_';
-            list($photobucket) = explode($string, $vidid);
+            [$photobucket] = explode($string, (string) $vidid);
             $ppublisher['ppublisher'] = $photobucket;
             $publisher                = '<a href="https://s39.photobucket.com/albums/' . $ppublisher['ppublisher'] . '" target="_blank">' . $publisher . '</a>';
             break;
@@ -266,7 +266,7 @@ function xtube_showvideo($vidid, $source, $screenshot, $picurl)
 
         // Photobucket
         case 3:
-            $vidid     = str_replace('th_', '', $vidid);
+            $vidid     = str_replace('th_', '', (string) $vidid);
             $showvideo = '<embed width="853" height="480" type="application/x-shockwave-flash" wmode="transparent" src="https://i51.photobucket.com/player.swf?file=https://vid51.photobucket.com/albums/' . $vidid . '.flv' . $photobucket . '"></embed>';
             break;
 
