@@ -2,7 +2,7 @@
 
 <{if $indexpage || $category.subcats || ($category && $display_category_summary)}>
 
-    <{if $display_category_summary && $category}>
+    <{if !empty($display_category_summary) && !empty($category)}>
         <div class="well-sm card">
             <{$lang_category_summary}>
         </div>
@@ -56,7 +56,7 @@
 
     <div align="right"><{$navbar}></div>
 
-<{$press_room_footer}>
+<{$press_room_footer|default:''}>
 
 
 <{/if}>

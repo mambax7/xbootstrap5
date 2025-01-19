@@ -11,14 +11,14 @@
     <{if $pagenav|default:false}><{$smarty.const._NW_PAGE}><{$pagenav}><{/if}>
     <{if isset($nav_links)}>
         <div class="col-md-6 alignleft">
-            <{if $previous_story_id != -1}>
+            <{if isset($previous_story_id) && $previous_story_id != -1}>
                 <a href="<{$xoops_url}>/modules/news/article.php?storyid=<{$previous_story_id}>" title="<{$previous_story_title}>">
                     <span class="fa fa-circle-arrow-left"></span> <{$lang_previous_story}>
                 </a>
             <{/if}>
         </div>
         <div class="col-md-6 alignright">
-            <{if $next_story_id!= -1}>
+            <{if  isset($next_story_id) && $next_story_id != -1}>
                 <a href="<{$xoops_url}>/modules/news/article.php?storyid=<{$next_story_id}>" title="<{$next_story_title}>">
                     <{$lang_next_story}> <span class="fa fa-circle-arrow-right"></span>
                 </a>
@@ -28,7 +28,7 @@
 </div><!-- .row -->
 
 <div class="xoops-news-icons aligncenter">
-    <{if $showicons == true}>
+    <{if isset($showicons) && $showicons == true}>
         <a href="<{$xoops_url}>/modules/news/print.php?storyid=<{$story.id}>" title="<{$lang_printerpage}>">
             <span class="fa fa-print"></span>
         </a>
